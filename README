@@ -1,0 +1,5 @@
+# Pi as an AirPrint Server
+
+This is a script that installs all the required packages to enable a RaspberryPi as a printer server.  It supports both AirPrint for OSX and iOS as well Windows.  
+
+Additionally it creates a cron job to automatically update the software on the Pi.
