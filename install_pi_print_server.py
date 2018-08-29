@@ -16,6 +16,8 @@ subprocess.call(["sudo","apt-get","install","samba","-y"])
 
 subprocess.call(["sudo","apt-get","install","cups","-y"])
 
+subprocess.call(["sudo","apt-get","install","hplip","-y"])
+
 subprocess.call(["sudo","usermod","-a","-G","lpadmin","pi"])
 
 subprocess.call(["sudo","cupsctl","--remote-any"])
