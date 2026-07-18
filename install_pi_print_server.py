@@ -22,7 +22,9 @@ subprocess.call(["sudo","usermod","-a","-G","lpadmin","pi"])
 
 subprocess.call(["sudo","cupsctl","--remote-any"])
 
-subprocess.call(["sudo","/etc/init.d/cups","restart"])
+subprocess.call(["sudo","cupsctl","WebInterface=yes"])
+
+subprocess.call(["sudo","systemctl","restart","cups"])
 
 
 #For Airprint functionality
